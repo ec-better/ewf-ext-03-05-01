@@ -8,7 +8,7 @@
   <parent>
     <groupId>com.terradue</groupId>
     <artifactId>dcs-python-parent</artifactId>
-    <version>2.0.0</version>
+    <version>3.0.1-docker</version>
   </parent>
   <description>ext-03-05-01 Tropical Forest Disturbance Analysis with Sentinel-1 SLC Data</description>
   <version>1.0</version>
