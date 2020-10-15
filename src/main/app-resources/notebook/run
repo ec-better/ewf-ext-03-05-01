@@ -11,6 +11,7 @@ from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
 import nbformat as nbf
 import uuid
 import ast
+import glob
 
 sys.path.append('/opt/anaconda/bin/')
 import cioppy
@@ -206,6 +207,14 @@ def main():
     ciop.log('DEBUG', 'The runtime folder is %s' % (runtime))
     os.makedirs(runtime)
     os.chdir(runtime) 
+    
+    #only for testing purposes
+    #for dir in glob.glob('/tmp/workspace-*'):
+        #try:
+            #shutil.rmtree(dir)
+        #except Exception as e:
+            #ciop.log('INFO', 'Error removing dir: {}'.format(e))
+            #pass
     
     # create the folder for the data stage-in
     global tmp_dir
